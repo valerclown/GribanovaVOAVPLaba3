@@ -35,7 +35,7 @@ public class HelloController {
 
         } catch (IOException e) {
             e.printStackTrace();
-            // Обработайте исключение в соответствии с вашими требованиями
+
         }
     }
 
@@ -56,7 +56,7 @@ public class HelloController {
             showConfirmationDialog("Изменения загружены");
         } catch (IOException e) {
             e.printStackTrace();
-            // Обработайте исключение в соответствии с вашими требованиями
+           
         }
     }
 
@@ -66,7 +66,7 @@ public class HelloController {
             loadSelectedHtml();
         } catch (IOException e) {
             e.printStackTrace();
-            // Обработайте исключение в соответствии с вашими требованиями
+            
         }
     }
 
