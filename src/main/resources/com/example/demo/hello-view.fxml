@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- html-editor.fxml -->
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.Region?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demo.HelloController"
+      spacing="10"
+      alignment="CENTER"
+      stylesheets="styles.css">
+
+
+    <ChoiceBox fx:id="fileChoiceBox" maxWidth="200" />
+    <TextArea fx:id="htmlTextArea" prefHeight="400" prefWidth="600"
+              promptText="Введите HTML здесь..."
+              style="-fx-font-size: 14px; -fx-font-family: 'Arial';"/>
+    <Button text="Сохранить" onAction="#saveHtml"
+            style="-fx-font-size: 14px; -fx-padding: 10;"/>
+    <Button text="Загрузить" onAction="#loadHtml"
+            style="-fx-font-size: 14px; -fx-padding: 10;"/>
+</VBox>
